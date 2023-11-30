@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 public class PartA_Driver {
 
-    // Main method to start the program
     public static void main(String[] args) {
         // Create hash maps for words and characters
         ProbeHashMap<String, Integer> wordMap = new ProbeHashMap<>();
@@ -83,7 +82,6 @@ public class PartA_Driver {
         }
     
         // Convert the filtered list to an array
-        @SuppressWarnings("unchecked")
         Entry<K, V>[] entries = new Entry[filteredEntries.size()];
         for (int i = 0; i < filteredEntries.size(); i++) {
             entries[i] = filteredEntries.get(i);

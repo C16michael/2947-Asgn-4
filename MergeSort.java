@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.Comparator;
-
+//Cristiano Michael 3147571
 public class MergeSort {
     //Standard Mergesort that takes in given comparator
     public static <K> void MergeSort(K[] S, Comparator<K> comp){
@@ -18,17 +18,7 @@ public class MergeSort {
     }
     //Overload to use defaultComparator
     public static <K> void MergeSort(K[] S){
-        int n = S.length;
-        if (n<2) return;
-
-        int mid = n/2; 
-        K[] S1 = Arrays.copyOfRange(S, 0, mid);
-        K[] S2 = Arrays.copyOfRange(S, mid, n);
-
-        MergeSort(S1, new DefaultComparator<>());
-        MergeSort(S2,  new DefaultComparator<>());
-
-        merge(S1, S2, S,  new DefaultComparator<>());
+       MergeSort(S, new DefaultComparator<>());
     }
 
 
